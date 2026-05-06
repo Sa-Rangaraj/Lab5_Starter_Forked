@@ -1,8 +1,8 @@
 # Lab 5
 
-[Expose](https://sa-rangaraj.github.io/Lab5_Starter_Forked/explore.html)
+[Expose Site](https://sa-rangaraj.github.io/Lab5_Starter_Forked/explore.html)
 
-[Explore](https://sa-rangaraj.github.io/Lab5_Starter_Forked/explore.html)
+[Explore Site](https://sa-rangaraj.github.io/Lab5_Starter_Forked/explore.html)
 
 
 ### Question 1 
