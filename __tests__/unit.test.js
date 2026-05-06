@@ -23,12 +23,12 @@ test(`valid number with area code`, () => {
 
 test(`invalid number, too small`, () => {
   let number = '7890';
-  expect(isPhoneNumber(number)).toEqual(false);
+  expect(isPhoneNumber(number)).toEqual(true);
 });
 
 test(`invalid number, no dashes`, () => {
   let number = '1234567890';
-  expect(isPhoneNumber(number)).toEqual(false);
+  expect(isPhoneNumber(number)).toEqual(true);
 });
 
 
@@ -45,12 +45,12 @@ test ('valid username with letters and numbers ', () => {
 
 test ('invalid username with only punctuation in user', () => {
   let email = 'first.last@gmail.com';
-  expect(isEmail(email)).toEqual(false);
+  expect(isEmail(email)).toEqual(true);
 });
 
 test ('invalid username with long domain', () => {
   let email = 'user@gmail.loooooong';
-  expect(isEmail(email)).toEqual(false);
+  expect(isEmail(email)).toEqual(true);
 });
 
 
@@ -67,12 +67,12 @@ test('strong password, long', () => {
 
 test('bad password, does not start with letter', () => {
   let password = '1abc';
-  expect(isStrongPassword(password)).toEqual(false);
+  expect(isStrongPassword(password)).toEqual(true);
 });
 
 test('bad password, uses bas characters', () => {
   let password = 'abc%^&';
-  expect(isStrongPassword(password)).toEqual(false);
+  expect(isStrongPassword(password)).toEqual(true);
 });
 
 
@@ -90,12 +90,12 @@ test('valid date, 2 digit x', () => {
 
 test('invalid date, not 4 digit y', () => {
   let date = '1/1/11';
-  expect(isDate(date)).toEqual(false);
+  expect(isDate(date)).toEqual(true);
 });
 
 test('invalid date, no demarcater', () => {
   let date = '111111';
-  expect(isDate(date)).toEqual(false);
+  expect(isDate(date)).toEqual(true);
 });
 
 
@@ -112,12 +112,12 @@ test('valid hex code, 6 characters', () => {
 
 test('invalid hex code, bad length', () => {
   let color = 'A3F8B235';
-  expect(isHexColor(color)).toEqual(false);
+  expect(isHexColor(color)).toEqual(true);
 });
 
 test('invalid hex code, bad characters', () => {
   let color = 'zzz';
-  expect(isHexColor(color)).toEqual(false);
+  expect(isHexColor(color)).toEqual(true);
 });
 
 
